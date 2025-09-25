@@ -1,0 +1,166 @@
+{
+
+  "InvalidEmailFormat": "صيغة البريد الإلكتروني غير صالحة",
+  "PasswordRequired": "كلمة المرور مطلوبة",
+  "UserNotFound": "المستخدم غير موجود",
+  "EmailNotConfirmed": "يرجى تأكيد بريدك الإلكتروني",
+  "AccountLocked": "حسابك مغلق مؤقتاً",
+  "InvalidCredentials": "بريد إلكتروني أو كلمة مرور خاطئة",
+  "LoginSuccessful": "تم تسجيل الدخول بنجاح",
+  "SystemError": "حدث خطأ في النظام",
+  "EmailAlreadyExists": "البريد الإلكتروني مسجل بالفعل",
+  "UserCannotBeNull": "بيانات المستخدم لا يمكن أن تكون فارغة",
+  "DeleteUserFailed": "فشل حذف المستخدم",
+  "UserDeletedSuccessfully": "تم حذف المستخدم بنجاح",
+  "UnexpectedError": "حدث خطأ غير متوقع",
+  "PasswordMinLength": "يجب أن تحتوي كلمة المرور على الأقل على {8} أحرف",
+  "EmailTooLong": "لا يمكن أن يتجاوز البريد الإلكتروني 256 حرفاً",
+  "UsernameRequired": "اسم المستخدم مطلوب",
+  "UsernameTooShort": "يجب أن يكون اسم المستخدم 3 أحرف على الأقل",
+  "UsernameTooLong": "لا يمكن أن يتجاوز اسم المستخدم 50 حرفاً",
+  "UsernameInvalidChars": "يمكن أن يحتوي اسم المستخدم على حروف وأرقام ونقاط وشرطات سفلية فقط",
+  "PhoneRequired": "رقم الهاتف مطلوب",
+  "InvalidPhoneFormat": "صيغة رقم الهاتف غير صالحة",
+  "PhoneTooLong": "لا يمكن أن يتجاوز رقم الهاتف 20 رقماً",
+  "AtLeastOneFieldRequired": "يجب تقديم حقل واحد على الأقل للتحديث",
+  "NoChangesDetected": "لم يتم الكشف عن أي تغييرات.",
+  "InvalidGenderValue": "قيمة الجنس غير صالحة. القيم المسموحة: ذكر، أنثى، آخر، أفضل عدم التحديد",
+  "FirstNameRequired": "الاسم الأول مطلوب",
+  "FirstNameTooLong": "لا يمكن أن يتجاوز الاسم الأول 50 حرفاً",
+  "LastNameRequired": "اسم العائلة مطلوب",
+  "LastNameTooLong": "لا يمكن أن يتجاوز اسم العائلة 50 حرفاً",
+  "PasswordUppercaseRequired": "يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل",
+  "PasswordLowercaseRequired": "يجب أن تحتوي كلمة المرور على حرف صغير واحد على الأقل",
+  "PasswordDigitRequired": "يجب أن تحتوي كلمة المرور على رقم واحد على الأقل",
+  "PasswordSpecialCharRequired": "يجب أن تحتوي كلمة المرور على حرف خاص واحد على الأقل",
+  "PasswordsDoNotMatch": "كلمة المرور وتأكيدها غير متطابقين",
+  "UpdateSuccessful": "تم التحديث بنجاح",
+  "ConfirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+  "DOBInvalid": "تاريخ الميلاد غير صالح",
+  "ProfileUpdated": "تم تحديث الملف الشخصي بنجاح",
+  "WeakPassword": "كلمة المرور ضعيفة جداً",
+ 
+    "FailedToCreateUser": "فشل إنشاء المستخدم",
+    "UserRegisteredSuccessfully": "تم تسجيل المستخدم بنجاح",
+    "OperationCancelled": "تم إلغاء العملية",
+    "ValidationErrors": "هناك أخطاء في التحقق من البيانات"
+ 
+
+
+  "EmailConfirmation": {
+    "Subject": "تأكيد بريدك الإلكتروني",
+    "Title": "تأكيد البريد الإلكتروني",
+    "Message": "شكرًا لتسجيلك معنا. يرجى النقر على الزر أدناه لتأكيد بريدك الإلكتروني.",
+    "Button": "تأكيد البريد",
+    "Footer": "إذا لم تطلب هذا البريد، يرجى تجاهله.",
+    "Error": "حدث خطأ أثناء إرسال بريد التأكيد"
+  },
+
+  "PasswordReset": {
+    "Subject": "إعادة تعيين كلمة المرور",
+    "Title": "إعادة تعيين كلمة المرور",
+    "Message": "لقد طلبت إعادة تعيين كلمة المرور الخاصة بك. يرجى النقر على الزر أدناه لتعيين كلمة مرور جديدة.",
+    "Button": "تعيين كلمة مرور جديدة",
+    "Footer": "سينتهي صلاحية هذا الرابط خلال {0} ساعة.",
+    "Error": "حدث خطأ أثناء إرسال بريد إعادة التعيين"
+  },
+
+  "WelcomeEmail": {
+    "Subject": "مرحبًا بك في خدمتنا",
+    "Title": "أهلاً بك {0}!",
+    "Message": "شكرًا لانضمامك إلينا. نحن سعداء بانضمامك إلى مجتمعنا.",
+    "Button": "زيارة الموقع",
+    "Footer": "إذا كان لديك أي استفسارات، لا تتردد في التواصل مع فريق الدعم.",
+    "Error": "حدث خطأ أثناء إرسال بريد الترحيب"
+  },
+
+  "AccountDeactivation": {
+    "Subject": "إشعار إلغاء تنشيط الحساب",
+    "Title": "تم إلغاء تنشيط الحساب",
+    "Message": "تم إلغاء تنشيط حسابك. سيتم حذفه نهائيًا في {0}.",
+    "Button": "الاتصال بالدعم",
+    "Footer": "إذا كنت ترغب في استعادة حسابك، يرجى الاتصال بنا قبل تاريخ الحذف.",
+    "Error": "حدث خطأ أثناء إرسال إشعار الإلغاء"
+  },
+
+  "CourseManagement": {
+    "CategoryNameRequired": "اسم الفئة مطلوب",
+    "CategoryNameMaxLength": "اسم الفئة لا يمكن أن يتجاوز {0} حرف",
+    "CategoryCreated": "تم إنشاء الفئة بنجاح",
+    "CategoryUpdated": "تم تحديث الفئة بنجاح",
+    "CategoryNotFound": "الفئة غير موجودة",
+    "ValidationError": "خطأ في التحقق من الصحة"
+  },
+  "AccountReactivation": {
+    "Subject": "تمت إعادة تنشيط الحساب",
+    "Title": "إعادة تنشيط الحساب",
+    "Message": "تمت إعادة تنشيط حسابك بنجاح. يمكنك الآن تسجيل الدخول باستخدام بياناتك.",
+    "Button": "تسجيل الدخول",
+    "Footer": "شكرًا لاستخدامك خدمتنا.",
+    "Error": "حدث خطأ أثناء إرسال إشعار إعادة التنشيط"
+  },
+
+
+  "Roles": {
+    "RetrievedSuccessfully": "تم استرجاع الأدوار بنجاح",
+    "CreatedSuccessfully": "تم إنشاء الدور '{0}' بنجاح",
+    "UpdatedSuccessfully": "تم تحديث الدور '{0}' بنجاح",
+    "DeletedSuccessfully": "تم حذف الدور '{0}' بنجاح",
+    "AssignedSuccessfully": "تم تعيين الدور '{0}' للمستخدم '{1}' بنجاح",
+    "RemovedSuccessfully": "تم إزالة الدور '{0}' من المستخدم '{1}' بنجاح",
+    "RoleAlreadyExists": "الدور موجود بالفعل",
+    "RoleNotFound": "الدور غير موجود",
+    "UserNotFound": "المستخدم غير موجود",
+    "UserAlreadyHasRole": "المستخدم لديه هذا الدور بالفعل",
+    "UserDoesNotHaveRole": "المستخدم لا يمتلك هذا الدور",
+    "RoleHasUsers": "لا يمكن حذف الدور لأنه يحتوي على مستخدمين معينين",
+    "InvalidRoleId": "معرّف الدور غير صالح",
+    "SystemError": "حدث خطأ في النظام",
+    "CreateRoleFailed": "فشل إنشاء الدور {0}. الأخطاء: {1}",
+    "AssignRoleFailed": "فشل تعيين الدور {0} للمستخدم {1}. الأخطاء: {2}",
+    "UpdateRoleFailed": "فشل تحديث الدور {0}. الأخطاء: {1}",
+    "DeleteRoleFailed": "فشل حذف الدور {0}. الأخطاء: {1}",
+    "RemoveRoleFailed": "فشل إزالة الدور {0} من المستخدم {1}. الأخطاء: {2}",
+    "UserRolesRetrievedSuccessfully": "تم استرجاع أدوار المستخدم '{0}' بنجاح",
+    "UserInactive": "المستخدم غير نشط",
+    "RoleExistenceChecked": "تم التحقق من وجود الدور '{0}'. النتيجة: {1}",
+    "RoleExists": "الدور '{0}' موجود",
+    "RoleDoesNotExist": "الدور '{0}' غير موجود",
+    "PermissionAlreadyAssigned": "هذا الإذن مرتبط بالفعل بالدور.",
+    "PermissionAddedSuccessfully": "تمت إضافة الإذن بنجاح إلى الدور.",
+    "PermissionNotFound": "الإذن المطلوب للدور غير موجود.",
+    "PermissionRemovedSuccessfully": "تمت إزالة الإذن من الدور بنجاح.",
+    "PermissionUpdatedSuccessfully": "تم تحديث الإذن للدور بنجاح."
+  },
+  "OperationCancelled": "تم إلغاء العملية",
+
+  "Validation": {
+    "UserIdRequired": "معرف المستخدم مطلوب",
+    "RoleNameRequired": "اسم الدور مطلوب",
+    "RoleNameMinLength": "يجب أن يكون اسم الدور على الأقل {0} أحرف",
+    "RoleNameMaxLength": "لا يمكن أن يتجاوز اسم الدور {0} حرف",
+    "RoleNameInvalidChars": "يمكن أن يحتوي اسم الدور على أحرف وأرقام ومسافات وشرطة سفلية فقط",
+    "ConsecutiveSpaces": "لا يمكن أن يحتوي اسم الدور على مسافات متتالية",
+    "OrganizationIdRequired": "معرف المؤسسة مطلوب",
+    "InvalidOrganizationIdFormat": "يجب أن يكون معرف المؤسسة بصيغة GUID صحيحة",
+    "CategoryNameRequired": "اسم التصنيف مطلوب",
+    "CategoryNameMaxLength": "لا يمكن أن يتجاوز اسم التصنيف {0} حرفًا",
+    "CategoryNameMinLength": "يجب أن يكون اسم التصنيف على الأقل {0} حرفًا",
+    "InvalidCategoryNameFormat": "يحتوي اسم التصنيف على أحرف غير مسموح بها",
+    "CreatedByRequired": "مُعرّف المنشئ مطلوب",
+    "CategoryAlreadyExists": "هناك تصنيف بنفس الاسم موجود بالفعل",
+    "InvalidDuration": "يجب أن تكون المدة رقمًا موجبًا",
+    "LectureTypeRequiresDuration": "نوع المحاضرة '{0}' يتطلب تحديد المدة",
+    "SuccessMessages": {
+      "CategoryCreated": "تم إنشاء التصنيف بنجاح",
+      "CategoryUpdated": "تم تحديث التصنيف بنجاح",
+      "CategoryDeleted": "تم حذف التصنيف بنجاح"
+    },
+    "ErrorMessages": {
+      "CategoryNotFound": "التصنيف غير موجود",
+      "CategoryUpdateFailed": "فشل تحديث التصنيف",
+      "CategoryDeleteFailed": "فشل حذف التصنيف"
+    }
+  }
+
+}

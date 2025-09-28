@@ -14,7 +14,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-
+//"JwtBearer",
 namespace Identity.Infrastructure.Extensions
 {
     public static class AuthServiceExtensions
@@ -24,64 +24,41 @@ namespace Identity.Infrastructure.Extensions
         {
             services.AddAuthentication(options =>
             {
-                // ✅ التصحيح: جعل Cookie كافتراضي للـ Razor Pages
-                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             })
-            .AddCookie(options =>
-            {
-                options.LoginPath = "/Admin/User/Login";
-                options.AccessDeniedPath = "/Admin/User/AccessDenied";
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(15);
-                options.SlidingExpiration = true;
-                options.Cookie.HttpOnly = true;
-                options.Cookie.SecurePolicy = Microsoft.AspNetCore.Http.CookieSecurePolicy.Always;
-                options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Lax;
-                options.Cookie.Name = "Monstor.Auth";
+.AddJwtBearer( options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience =false,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = config["Jwt:Issuer"],
+        //ValidAudience = config["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(
+            Encoding.UTF8.GetBytes(config["Jwt:SecretKey"]
+                ?? throw new ArgumentNullException("JWT key missing"))
+        ),
+        RoleClaimType = ClaimTypes.Role,
+        ClockSkew = TimeSpan.Zero
+    };
 
-                // ✅ إعدادات إضافية للـ Events
-                options.Events = new CookieAuthenticationEvents
-                {
-                    OnValidatePrincipal = context =>
-                    {
-                        // يمكنك إضافة منطق التحقق الإضافي هنا
-                        return Task.CompletedTask;
-                    }
-                };
-            })
-            .AddJwtBearer("JwtBearer", options =>
+    options.Events = new JwtBearerEvents
+    {
+        OnMessageReceived = context =>
+        {
+            // ✅ لو حابب تقرأ التوكن من الكوكي (مثلاً من MVC)
+            var token = context.Request.Cookies["JWT_TOKEN"];
+            if (!string.IsNullOrEmpty(token))
             {
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    ValidIssuer = config["Jwt:Issuer"],
-                    ValidAudience = config["Jwt:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(
-                        Encoding.UTF8.GetBytes(config["Jwt:SecretKey"]
-                            ?? throw new ArgumentNullException("JWT key missing"))
-                    ),
-                    RoleClaimType = ClaimTypes.Role,
-                    ClockSkew = TimeSpan.Zero
-                };
-
-                options.Events = new JwtBearerEvents
-                {
-                    OnMessageReceived = context =>
-                    {
-                        var token = context.Request.Cookies["JWT_TOKEN"];
-                        if (!string.IsNullOrEmpty(token))
-                        {
-                            context.Token = token;
-                        }
-                        return Task.CompletedTask;
-                    }
-                };
-            });
+                context.Token = token;
+            }
+            return Task.CompletedTask;
+        }
+    };
+});
 
             return services;
         }

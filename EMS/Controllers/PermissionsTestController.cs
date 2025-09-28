@@ -18,8 +18,7 @@ namespace Identity.API.Controllers
         /// Test User CRUD permissions
         /// </summary>
         [HttpGet("user/create")]
-        //[Authorize]
-        [Authorize(Policy = "User:CRUD:CreateUser")]
+        [Authorize(Policy = "UserManagement:Write:Users.Create")]
         [ProducesResponseType(typeof(RequestResponse<string>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]

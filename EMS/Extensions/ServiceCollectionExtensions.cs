@@ -20,8 +20,9 @@ namespace Identity.API.Extensions
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Identity API",
-                    Version = "v1"
+                    Title = "EMS API",
+                    Version = "v1",
+                    Description = "Enterprise Management System API"
                 });
 
                 // إضافة فلتر مخصص لو محتاج

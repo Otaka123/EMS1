@@ -449,7 +449,7 @@ namespace Identity.Infrastructure.Services.User
                     }
 
                     // البحث باسم المستخدم
-                    var usernameUser = await _userManager.FindByNameAsync(identifier);
+                    var usernameUser = await _userManager.FindByNameAsync(identifier.Trim());
                     if (usernameUser != null)
                     {
                         _logger.LogDebug("User found by username: {Identifier}", identifier);
@@ -1093,16 +1093,27 @@ CancellationToken cancellationToken = default)
         }
         private bool HasUserChanges(UpdateUserRequest original, UpdateUserRequest updated)
         {
-            if (original == null || updated == null) return false;
-
-            return
-                !string.Equals(original.FirstName, updated.FirstName, StringComparison.OrdinalIgnoreCase) ||
-                !string.Equals(original.LastName, updated.LastName, StringComparison.OrdinalIgnoreCase) ||
-                original.DOB != updated.DOB ||
-                !string.Equals(original.Phone, updated.Phone, StringComparison.OrdinalIgnoreCase) ||
-                !string.Equals(original.Gender, updated.Gender, StringComparison.OrdinalIgnoreCase);
-               
+            return original.FirstName != updated.FirstName ||
+                   original.LastName != updated.LastName ||
+                   original.DOB != updated.DOB ||
+                   original.Phone != updated.Phone ||
+                   original.Gender != updated.Gender ||
+                   original.ProfilePictureUrl != updated.ProfilePictureUrl ||
+                   original.Address != updated.Address;
         }
+
+        //private bool HasUserChanges(UpdateUserRequest original, UpdateUserRequest updated)
+        //{
+        //    if (original == null || updated == null) return false;
+
+        //    return
+        //        !string.Equals(original.FirstName, updated.FirstName, StringComparison.OrdinalIgnoreCase) ||
+        //        !string.Equals(original.LastName, updated.LastName, StringComparison.OrdinalIgnoreCase) ||
+        //        original.DOB != updated.DOB ||
+        //        !string.Equals(original.Phone, updated.Phone, StringComparison.OrdinalIgnoreCase) ||
+        //        !string.Equals(original.Gender, updated.Gender, StringComparison.OrdinalIgnoreCase);
+
+        //}
 
         private bool HasUserChanges(UpdateUserRequest original, AppUser updated)
         {
@@ -1114,6 +1125,110 @@ CancellationToken cancellationToken = default)
                    !string.Equals(original.Gender, MapGenderToString(updated.Gender), StringComparison.Ordinal) ||
                    !string.Equals(original.ProfilePictureUrl, updated.ProfilePictureUrl, StringComparison.Ordinal);
         }
+        //  public async Task<RequestResponse<UserResponse>> UpdateUserAsync(
+        //string userId,
+        //UpdateUserRequest request,
+        //CancellationToken cancellationToken = default)
+        //  {
+        //      try
+        //      {
+        //          cancellationToken.ThrowIfCancellationRequested();
+
+        //          // 1. التحقق من صحة المدخلات
+        //          if (string.IsNullOrWhiteSpace(userId))
+        //          {
+        //              _logger.LogWarning("UpdateUser: Empty user ID provided");
+        //              return RequestResponse<UserResponse>.BadRequest(_localizer["UserIdRequired"]);
+        //          }
+
+        //          if (request is null)
+        //          {
+        //              _logger.LogWarning("UpdateUser: Update request is null for user {UserId}", userId);
+        //              return RequestResponse<UserResponse>.BadRequest(_localizer["RequestCannotBeNull"]);
+        //          }
+
+        //          // 2. جلب المستخدم من قاعدة البيانات
+        //          var user = await _userManager.FindByIdAsync(userId);
+        //          if (user is null)
+        //          {
+        //              _logger.LogWarning("UpdateUser: User with ID {UserId} not found", userId);
+        //              return RequestResponse<UserResponse>.NotFound(_localizer["UserNotFound"]);
+        //          }
+        //          cancellationToken.ThrowIfCancellationRequested();
+
+        //          // 3. التحقق من كلمة المرور إذا تم تقديمها
+        //          if (!string.IsNullOrWhiteSpace(request.CurrentPassword) &&
+        //              !await _userManager.CheckPasswordAsync(user, request.CurrentPassword))
+        //          {
+        //              _logger.LogWarning("UpdateUser: Invalid password provided for user {UserId}", userId);
+        //              return RequestResponse<UserResponse>.Unauthorized(_localizer["InvalidPassword"]);
+        //          }
+        //          UpdateUserRequest originalUser = new UpdateUserRequest();
+        //          originalUser.FirstName = user.FirstName;
+        //          originalUser.LastName = user.LastName;
+
+
+
+        //          // 5. تطبيق التحديثات على الكيان
+        //          _mapper.Map(request, user);
+
+        //          // 6. عمل نسخة بعد التحديث للمقارنة
+        //          var updatedUser = _mapper.Map<UpdateUserRequest>(user);
+
+        //          // 7. التحقق من وجود تغييرات فعلية
+        //          if (!HasUserChanges(originalUser, updatedUser))
+        //          {
+        //              _logger.LogInformation("UpdateUser: No changes detected for user {UserId}", userId);
+        //              return RequestResponse<UserResponse>.Error(
+        //                  ResponseError.BadRequest,
+        //                  _localizer["NoChangesDetected"]);
+        //          }
+        //          cancellationToken.ThrowIfCancellationRequested();
+
+        //          // 8. التحقق من التكرارات (مثال: البريد الإلكتروني)
+        //          //await ValidateUniqueConstraintsAsync(user, originalUser, cancellationToken);
+
+        //          // 9. حفظ التغييرات
+        //          var updateResult = await _userManager.UpdateAsync(user);
+        //          if (!updateResult.Succeeded)
+        //          {
+        //              var errors = updateResult.Errors
+        //                  .Select(e => _localizer[e.Description].ToString())
+        //                  .ToList();
+
+        //              _logger.LogError(
+        //                  "UpdateUser: Failed to update user {UserId}. Errors: {Errors}",
+        //                  userId, string.Join(", ", errors));
+
+        //              return RequestResponse<UserResponse>.Fail(
+        //                  _localizer["UpdateFailed"],
+        //                  errors);
+        //          }
+        //          cancellationToken.ThrowIfCancellationRequested();
+
+        //          // 10. إعداد الاستجابة
+
+        //          var userResponse = _mapper.Map<UserResponse>(user);
+        //          _logger.LogInformation(
+        //              "UpdateUser: User {UserId} updated successfully",
+        //              userId);
+
+        //          return RequestResponse<UserResponse>.Ok(
+        //              userResponse,
+        //              _localizer["UpdateSuccessful"]);
+        //      }
+        //      catch (Exception ex)
+        //      {
+        //          _logger.LogError(
+        //              ex,
+        //              "UpdateUser: Unexpected error while updating user {UserId}",
+        //              userId);
+
+        //          return RequestResponse<UserResponse>.Error(
+        //              ResponseError.InternalServerError,
+        //              _localizer["UpdateError"]);
+        //      }
+        //  }
         public async Task<RequestResponse<UserResponse>> UpdateUserAsync(
       string userId,
       UpdateUserRequest request,
@@ -1152,32 +1267,20 @@ CancellationToken cancellationToken = default)
                     _logger.LogWarning("UpdateUser: Invalid password provided for user {UserId}", userId);
                     return RequestResponse<UserResponse>.Unauthorized(_localizer["InvalidPassword"]);
                 }
-                UpdateUserRequest originalUser = new UpdateUserRequest();
-                originalUser.FirstName = user.FirstName;
-                originalUser.LastName = user.LastName;
 
-              
-
-                // 5. تطبيق التحديثات على الكيان
-                _mapper.Map(request, user);
-
-                // 6. عمل نسخة بعد التحديث للمقارنة
-                var updatedUser = _mapper.Map<UpdateUserRequest>(user);
-
-                // 7. التحقق من وجود تغييرات فعلية
-                if (!HasUserChanges(originalUser, updatedUser))
+                // 4. التحقق من وجود تغييرات فعلية
+                if (!HasUserChanges(request, user))
                 {
                     _logger.LogInformation("UpdateUser: No changes detected for user {UserId}", userId);
                     return RequestResponse<UserResponse>.Error(
                         ResponseError.BadRequest,
                         _localizer["NoChangesDetected"]);
                 }
-                cancellationToken.ThrowIfCancellationRequested();
 
-                // 8. التحقق من التكرارات (مثال: البريد الإلكتروني)
-                //await ValidateUniqueConstraintsAsync(user, originalUser, cancellationToken);
+                // 5. تطبيق التحديثات
+                _mapper.Map(request, user);
 
-                // 9. حفظ التغييرات
+                // 6. حفظ التغييرات
                 var updateResult = await _userManager.UpdateAsync(user);
                 if (!updateResult.Succeeded)
                 {
@@ -1195,12 +1298,9 @@ CancellationToken cancellationToken = default)
                 }
                 cancellationToken.ThrowIfCancellationRequested();
 
-                // 10. إعداد الاستجابة
-
+                // 7. إعداد الاستجابة
                 var userResponse = _mapper.Map<UserResponse>(user);
-                _logger.LogInformation(
-                    "UpdateUser: User {UserId} updated successfully",
-                    userId);
+                _logger.LogInformation("UpdateUser: User {UserId} updated successfully", userId);
 
                 return RequestResponse<UserResponse>.Ok(
                     userResponse,
@@ -1219,6 +1319,72 @@ CancellationToken cancellationToken = default)
             }
         }
 
+        public async Task<RequestResponse<UserResponse>> GetUserByIdAsync(
+    string userId,
+    CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                // 1. التحقق من صحة المدخلات
+                if (string.IsNullOrWhiteSpace(userId))
+                {
+                    _logger.LogWarning("GetUserById: Empty user ID provided");
+                    return RequestResponse<UserResponse>.BadRequest(_localizer["UserIdRequired"]);
+                }
+
+                cancellationToken.ThrowIfCancellationRequested();
+
+                // 2. البحث عن المستخدم
+                var user = await _userManager.FindByIdAsync(userId);
+                if (user == null)
+                {
+                    _logger.LogWarning("GetUserById: User with ID {UserId} not found", userId);
+                    return RequestResponse<UserResponse>.NotFound(_localizer["UserNotFound"]);
+                }
+
+                // 3. التحقق من أن المستخدم نشط (حسب متطلبات النظام)
+                if (!user.IsActive)
+                {
+                    _logger.LogWarning("GetUserById: User {UserId} is inactive", userId);
+                    return RequestResponse<UserResponse>.Error(
+                        ResponseError.BadRequest,
+                        _localizer["UserIsInactive"]);
+                }
+
+                cancellationToken.ThrowIfCancellationRequested();
+
+                // 4. جلب أدوار المستخدم
+                var roles = await _userManager.GetRolesAsync(user);
+
+                cancellationToken.ThrowIfCancellationRequested();
+
+                // 5. تعيين البيانات إلى نموذج الاستجابة
+                var userResponse = _mapper.Map<UserResponse>(user);
+                userResponse.Roles = roles.ToList();
+
+                // 6. تسجيل النجاح
+                _logger.LogInformation("GetUserById: Successfully retrieved user {UserId}", userId);
+
+                return RequestResponse<UserResponse>.Ok(
+                    userResponse,
+                    _localizer["UserRetrievedSuccessfully"]);
+
+            }
+            catch (OperationCanceledException)
+            {
+                _logger.LogInformation("GetUserById: Operation was cancelled for user {UserId}", userId);
+                return RequestResponse<UserResponse>.Fail(_localizer["OperationCancelled"]);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(
+                    ex,
+                    "GetUserById: Unexpected error while retrieving user {UserId}",
+                    userId);
+
+                return RequestResponse<UserResponse>.InternalServerError(_localizer["UnexpectedUserError"]);
+            }
+        }
 
     }
 }

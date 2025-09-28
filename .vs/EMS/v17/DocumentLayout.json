@@ -1,0 +1,440 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Clean\\EMS1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|d:\\clean\\ems1\\ems\\controllers\\permissionstestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|solutionrelative:ems\\controllers\\permissionstestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\infrastructure\\services\\policyprovider\\permissionpolicyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\infrastructure\\services\\policyprovider\\permissionpolicyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|d:\\clean\\ems1\\ems\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|solutionrelative:ems\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|d:\\clean\\ems1\\ems\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|solutionrelative:ems\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\infrastructure\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\infrastructure\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|d:\\clean\\ems1\\ems\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|solutionrelative:ems\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\application\\contracts\\dto\\request\\users\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\application\\contracts\\dto\\request\\users\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\domain\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\domain\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\infrastructure\\extensions\\identityserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\infrastructure\\extensions\\identityserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\application\\contracts\\dto\\response\\roles\\manageuserrolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\application\\contracts\\dto\\response\\roles\\manageuserrolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|d:\\clean\\ems1\\ems\\controllers\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|solutionrelative:ems\\controllers\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|d:\\clean\\ems1\\ems\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|solutionrelative:ems\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\infrastructure\\services\\roles\\rolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\infrastructure\\services\\roles\\rolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\infrastructure\\extensions\\authserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\infrastructure\\extensions\\authserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|d:\\clean\\ems1\\ems\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|solutionrelative:ems\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\application\\contracts\\seeds\\identityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\application\\contracts\\seeds\\identityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|d:\\clean\\ems1\\ems\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|solutionrelative:ems\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\application\\contracts\\dto\\request\\roles\\updaterolepermissionsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\application\\contracts\\dto\\request\\roles\\updaterolepermissionsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\application\\contracts\\dto\\response\\roles\\permissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\application\\contracts\\dto\\response\\roles\\permissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|d:\\clean\\ems1\\ems\\extensions\\applicationbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|solutionrelative:ems\\extensions\\applicationbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\application\\contracts\\dto\\response\\roles\\rolepermissionsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\application\\contracts\\dto\\response\\roles\\rolepermissionsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\application\\contracts\\dto\\response\\roles\\userroleinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\application\\contracts\\dto\\response\\roles\\userroleinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\application\\contracts\\dto\\response\\roles\\userrolesresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\application\\contracts\\dto\\response\\roles\\userrolesresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|d:\\clean\\ems1\\identity\\application\\contracts\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A86922-E405-4F76-9253-7A7C948FC3E3}|Identity\\Identity.csproj|solutionrelative:identity\\application\\contracts\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|d:\\clean\\ems1\\ems\\filters\\swaggeraddlanguageheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB55B55C-623B-44FE-B296-D143FCAD86A1}|EMS\\EMS.csproj|solutionrelative:ems\\filters\\swaggeraddlanguageheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Domain\\AppUser.cs",
+              "RelativeDocumentMoniker": "Identity\\Domain\\AppUser.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Domain\\AppUser.cs",
+              "RelativeToolTip": "Identity\\Domain\\AppUser.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T11:05:30.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PermissionPolicyProvider.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Infrastructure\\Services\\PolicyProvider\\PermissionPolicyProvider.cs",
+              "RelativeDocumentMoniker": "Identity\\Infrastructure\\Services\\PolicyProvider\\PermissionPolicyProvider.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Infrastructure\\Services\\PolicyProvider\\PermissionPolicyProvider.cs",
+              "RelativeToolTip": "Identity\\Infrastructure\\Services\\PolicyProvider\\PermissionPolicyProvider.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T06:21:54.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IdentitySeed.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\Seeds\\IdentitySeed.cs",
+              "RelativeDocumentMoniker": "Identity\\Application\\Contracts\\Seeds\\IdentitySeed.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\Seeds\\IdentitySeed.cs",
+              "RelativeToolTip": "Identity\\Application\\Contracts\\Seeds\\IdentitySeed.cs",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAAwOwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T06:19:53.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IdentityServiceExtensions.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Infrastructure\\Extensions\\IdentityServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Identity\\Infrastructure\\Extensions\\IdentityServiceExtensions.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Infrastructure\\Extensions\\IdentityServiceExtensions.cs",
+              "RelativeToolTip": "Identity\\Infrastructure\\Extensions\\IdentityServiceExtensions.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAArwCAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:53:38.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PermissionDTO.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Response\\Roles\\PermissionDTO.cs",
+              "RelativeDocumentMoniker": "Identity\\Application\\Contracts\\DTO\\Response\\Roles\\PermissionDTO.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Response\\Roles\\PermissionDTO.cs",
+              "RelativeToolTip": "Identity\\Application\\Contracts\\DTO\\Response\\Roles\\PermissionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:39:07.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RolesService.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Infrastructure\\Services\\Roles\\RolesService.cs",
+              "RelativeDocumentMoniker": "Identity\\Infrastructure\\Services\\Roles\\RolesService.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Infrastructure\\Services\\Roles\\RolesService.cs",
+              "RelativeToolTip": "Identity\\Infrastructure\\Services\\Roles\\RolesService.cs",
+              "ViewState": "AgIAALUBAAAAAAAAAAAAwMEBAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:29:52.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthServiceExtensions.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Infrastructure\\Extensions\\AuthServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Identity\\Infrastructure\\Extensions\\AuthServiceExtensions.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Infrastructure\\Extensions\\AuthServiceExtensions.cs",
+              "RelativeToolTip": "Identity\\Infrastructure\\Extensions\\AuthServiceExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:07:02.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateUserRequest.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Request\\Users\\UpdateUserRequest.cs",
+              "RelativeDocumentMoniker": "Identity\\Application\\Contracts\\DTO\\Request\\Users\\UpdateUserRequest.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Request\\Users\\UpdateUserRequest.cs",
+              "RelativeToolTip": "Identity\\Application\\Contracts\\DTO\\Request\\Users\\UpdateUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:00:54.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RolePermissionsResponse.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Response\\Roles\\RolePermissionsResponse.cs",
+              "RelativeDocumentMoniker": "Identity\\Application\\Contracts\\DTO\\Response\\Roles\\RolePermissionsResponse.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Response\\Roles\\RolePermissionsResponse.cs",
+              "RelativeToolTip": "Identity\\Application\\Contracts\\DTO\\Response\\Roles\\RolePermissionsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T11:15:17.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UpdateRolePermissionsRequest.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Request\\Roles\\UpdateRolePermissionsRequest.cs",
+              "RelativeDocumentMoniker": "Identity\\Application\\Contracts\\DTO\\Request\\Roles\\UpdateRolePermissionsRequest.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Request\\Roles\\UpdateRolePermissionsRequest.cs",
+              "RelativeToolTip": "Identity\\Application\\Contracts\\DTO\\Request\\Roles\\UpdateRolePermissionsRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T11:15:03.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserRoleInfo.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Response\\Roles\\UserRoleInfo.cs",
+              "RelativeDocumentMoniker": "Identity\\Application\\Contracts\\DTO\\Response\\Roles\\UserRoleInfo.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Response\\Roles\\UserRoleInfo.cs",
+              "RelativeToolTip": "Identity\\Application\\Contracts\\DTO\\Response\\Roles\\UserRoleInfo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T11:13:17.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserRolesResponse.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Response\\Roles\\UserRolesResponse.cs",
+              "RelativeDocumentMoniker": "Identity\\Application\\Contracts\\DTO\\Response\\Roles\\UserRolesResponse.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Response\\Roles\\UserRolesResponse.cs",
+              "RelativeToolTip": "Identity\\Application\\Contracts\\DTO\\Response\\Roles\\UserRolesResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T11:12:51.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Identity\\Application\\Contracts\\Interfaces\\IUserService.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Identity\\Application\\Contracts\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:59:31.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Infrastructure\\Services\\User\\UserService.cs",
+              "RelativeDocumentMoniker": "Identity\\Infrastructure\\Services\\User\\UserService.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Infrastructure\\Services\\User\\UserService.cs",
+              "RelativeToolTip": "Identity\\Infrastructure\\Services\\User\\UserService.cs",
+              "ViewState": "AgIAAMEEAAAAAAAAAAAiwNwEAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:58:01.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ManageUserRolesDTO.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Response\\Roles\\ManageUserRolesDTO.cs",
+              "RelativeDocumentMoniker": "Identity\\Application\\Contracts\\DTO\\Response\\Roles\\ManageUserRolesDTO.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\Identity\\Application\\Contracts\\DTO\\Response\\Roles\\ManageUserRolesDTO.cs",
+              "RelativeToolTip": "Identity\\Application\\Contracts\\DTO\\Response\\Roles\\ManageUserRolesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:45:20.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PermissionController.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\EMS\\Controllers\\PermissionController.cs",
+              "RelativeDocumentMoniker": "EMS\\Controllers\\PermissionController.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\EMS\\Controllers\\PermissionController.cs",
+              "RelativeToolTip": "EMS\\Controllers\\PermissionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:27:15.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PermissionsTestController.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\EMS\\Controllers\\PermissionsTestController.cs",
+              "RelativeDocumentMoniker": "EMS\\Controllers\\PermissionsTestController.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\EMS\\Controllers\\PermissionsTestController.cs",
+              "RelativeToolTip": "EMS\\Controllers\\PermissionsTestController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:27:12.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\EMS\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "EMS\\Controllers\\RoleController.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\EMS\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "EMS\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAjwNkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:27:10.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\EMS\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EMS\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\EMS\\Controllers\\UserController.cs",
+              "RelativeToolTip": "EMS\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACkBAAAAAAAAAAAuwDYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:27:09.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\EMS\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "EMS\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\EMS\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "EMS\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:26:02.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplicationBuilderExtensions.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\EMS\\Extensions\\ApplicationBuilderExtensions.cs",
+              "RelativeDocumentMoniker": "EMS\\Extensions\\ApplicationBuilderExtensions.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\EMS\\Extensions\\ApplicationBuilderExtensions.cs",
+              "RelativeToolTip": "EMS\\Extensions\\ApplicationBuilderExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:26:00.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SwaggerAddLanguageHeader.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\EMS\\Filters\\SwaggerAddLanguageHeader.cs",
+              "RelativeDocumentMoniker": "EMS\\Filters\\SwaggerAddLanguageHeader.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\EMS\\Filters\\SwaggerAddLanguageHeader.cs",
+              "RelativeToolTip": "EMS\\Filters\\SwaggerAddLanguageHeader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:25:58.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\EMS\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EMS\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Clean\\EMS1\\EMS\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EMS\\Properties\\launchSettings.json",
+              "ViewState": "AgIAACYAAAAAAAAAAAAowHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-25T10:23:28.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\EMS\\appsettings.json",
+              "RelativeDocumentMoniker": "EMS\\appsettings.json",
+              "ToolTip": "D:\\Clean\\EMS1\\EMS\\appsettings.json",
+              "RelativeToolTip": "EMS\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-25T10:22:29.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Clean\\EMS1\\EMS\\Program.cs",
+              "RelativeDocumentMoniker": "EMS\\Program.cs",
+              "ToolTip": "D:\\Clean\\EMS1\\EMS\\Program.cs",
+              "RelativeToolTip": "EMS\\Program.cs",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAiwBUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:19:26.404Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

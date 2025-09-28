@@ -15,6 +15,9 @@ namespace Identity.Application.Contracts.Interfaces
         public interface IUserService
         {
 
+        Task<RequestResponse<UserResponse>> GetUserByIdAsync(
+    string userId,
+    CancellationToken cancellationToken = default);
             /// <summary>
             /// تسجيل دخول المستخدم باستخدام اسم المستخدم أو البريد أو رقم الهاتف وكلمة المرور
             /// </summary>
